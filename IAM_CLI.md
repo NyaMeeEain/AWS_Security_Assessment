@@ -1,3 +1,4 @@
+```
 aws iam create-user --user-name haxuser
 aws iam create-access-key --user-name haxuser
 aws iam create-group --group-name haxuser
@@ -12,7 +13,7 @@ aws iam create-login-profile --user-name haxuser --password 'SuperDuperCoolPassw
 #Create an account alias so you can access the account web console
 aws iam create-account-alias --account-alias haxuseralias
 hxxps://haxuseralias.signin.aws.amazon.com/console/
+```
 
-
-https://d47zm3.me/resources/infosec/cloud-security/
+ref https://d47zm3.me/resources/infosec/cloud-security/
 

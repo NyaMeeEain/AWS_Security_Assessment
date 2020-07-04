@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#https://www.emergingdefense.com/blog/2019/1/16/abusing-aws-metadata-service
+#Ref https://www.emergingdefense.com/blog/2019/1/16/abusing-aws-metadata-service
 import os
 
 def metadata_endpoint(metadata):

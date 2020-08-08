@@ -1,4 +1,8 @@
 ## AWS 
+
+The metadata API that allows processes in a VM instance to learn the information specific to that VM. Metadata service gives applications an easy way to know the environments they are running in and adjust the configurations accordingly. The metadata API provides information such as instance ID, image ID, private/public IP, and network configuration.
+Any user or process, by default, has full access to the metadata API.
+
 ```
 http://x.x.x.x/latest/user-data
 http://x.x.x.x/latest/user-data/iam/security-credentials/[ROLE NAME]

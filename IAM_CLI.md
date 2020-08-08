@@ -21,6 +21,6 @@ aws iam create-account-alias --account-alias haxuseralias
 hxxps://haxuseralias.signin.aws.amazon.com/console/
 ```
 
-ref https://d47zm3.me/resources/infosec/cloud-security/
-ref https://unit42.paloaltonetworks.com/server-side-request-forgery-exposes-data-of-technology-industrial-and-media-organizations/
+* ref https://d47zm3.me/resources/infosec/cloud-security/
+* ref https://unit42.paloaltonetworks.com/server-side-request-forgery-exposes-data-of-technology-industrial-and-media-organizations/
 

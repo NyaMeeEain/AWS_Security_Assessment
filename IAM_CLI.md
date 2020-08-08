@@ -1,3 +1,9 @@
+# Identity and Access Management
+
+IAM credential It can be used to access other cloud services such as the S3 bucket or container registry. 
+If an admin identity is attached to the instance or the identity is provisioned with excessive privileges, attackers can compromise the entire cloud infrastructure.
+
+
 ```
 aws iam create-user --user-name haxuser
 aws iam create-access-key --user-name haxuser

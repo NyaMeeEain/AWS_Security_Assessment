@@ -12,7 +12,7 @@ aws s3 ls --profile Test
 aws s3 ls s3://file.resilient --profile Test
 ```
 
-# If you have enough to have priviledge to utilize AWS Systems Manager Agent 
+# If you have enough to utilize AWS Systems Manager Agent 
 ```
 aws ssm describe-instance-information — profile Test
 

@@ -7,7 +7,6 @@ Default region name [None]: us-west-2
 ```
 # Upon adding the crednetail.next step is to enumerate
 ```
-
 aws s3 ls --profile Test
 aws s3 ls s3://file.resilient --profile Test
 ```
@@ -46,9 +45,4 @@ On your Attacker Machine,proxychains setting must be amend like information belo
 
 socks5 54.211.12.132 7777 NLK 123456@*&<>
 proxychains firefox 127.0.0.1:8080
-
-
-
-
-
 ```

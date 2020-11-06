@@ -39,6 +39,7 @@ ping6 -c4 -I eth0 ff02::1 | tee ipv6
 ```
 ssh -i private.key ubuntu@54.211.12.132 -L 8080:127.0.0.1:8080 -N -f
 
+Or Socks proxy solutions
 wget https://raw.githubusercontent.com/mfontanini/Programs-Scripts/master/socks5/socks5.cpp
 
 The following variable should be changed

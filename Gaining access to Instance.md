@@ -24,3 +24,10 @@ apt-get isntall install ec2-instance-connect
 aws ec2-instance-connect send-ssh-public-key --region us-east-1 --instance-id i-0989ec8719613a4d9 --availability-zone us-west-2f --instance-os-user ec2-user --ssh-public-key file://My-Key.pub
 ssh -i private.key ubuntu@54.211.12.132
 ```
+# Upon Gaining access to Instance, Next Step is to enumerate the internal hosts and Services.
+```
+ifconfig or /sbin/ifconfig
+for i in {1..254} ;do (ping -c 1 192.168.1.$i | grep "bytes from" &) ;done
+for i in {1..254}; do (ping -c 1 192.168.1.${i} | grep "bytes from" | grep -v "Unreachable" &); done;
+ping6 -c4 -I eth0 ff02::1 | tee ipv6
+```

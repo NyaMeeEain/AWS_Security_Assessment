@@ -4,13 +4,30 @@ export AWS_ACCESS_KEY_ID=XXX
 export AWS_SECRET_ACCESS_KEY=XXX
 export AWS_SESSION_TOKEN=XXXX
 ```
+# Basic Enumeration
+```
+aws ec2 describe-regions --output table
+aws ec2 describe-addresses
+aws ec2 describe-instance-status
+aws ec2 describe-key-pairs
+aws ec2 describe-instance-types
+aws ec2 describe-network-acls
+aws ec2 describe-security-groups
+aws ec2 describe-snapshots
+
+```
+
+
 
 ```
 aws s3 ls  s3://ctfbucket-374385855887
 aws s3 cp file.txt s3://ctfbucket-374385855887/test.txt
 aws s3 cp c99.txt s3://ctfbucket-374385855887/c99.txt
 http://s3.amazonaws.com/ctfbucket-374385855887
+```
 
+
+```
 aws ec2 describe-instances
 aws ec2 describe-instances --instance-ids i-01dae4002316c79e6
 aws ec2 create-image --instance-id i-01dae4002316c79e6 --name "XXXX" --description "XXXX"

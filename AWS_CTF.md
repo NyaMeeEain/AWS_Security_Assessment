@@ -1,4 +1,11 @@
 ```
+export AWS_DEFAULT_REGION=us-east-1
+export AWS_ACCESS_KEY_ID=XXX
+export AWS_SECRET_ACCESS_KEY=XXX
+export AWS_SESSION_TOKEN=XXXX
+```
+
+```
 aws s3 ls  s3://ctfbucket-374385855887
 aws s3 cp file.txt s3://ctfbucket-374385855887/test.txt
 http://s3.amazonaws.com/ctfbucket-374385855887
